@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    src: url(PostNoBillsJaffna-Bold.ttf);
+    font-family: Post No Bills Jaffna;
+}
+ul {
+    list-style-type: none;
+
+}
+a {
+    text-decoration: none;
+}
+#background {
+    width: 100%;
+    background-color: gainsboro;
+    /* height: 900px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container {
+    max-width: 1920px;
+    min-width: 440px;
+    width: 1920px;
+    overflow: hidden;
+    /* height: 800px; */
+
+}
+.start {
+    width: 100%;
+    height: 44px;
+    background: #000000;
+    display: flex;
+    flex-direction: row;
+
+}
+.start p {
+    
+    font-family: sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color: gray;
+margin-left: 15px;;
+
+
+}
+.start-left {
+    width: 50%;
+    height: 44px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-right {
+    width: 50%;
+    height: 44px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-right > div > img:last-child {
+    position: absolute;
+}
+.start-right > div {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background: #0F0F0F;
+
+}
+.navbar-left {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar-left h4 {
+    font-family: Post No Bills Jaffna;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+
+}
+.navbar-right {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.navbar-right ul {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-right ul li {
+    display: inline;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.navbar-right ul li a {
+    font-family: 'PT Sans', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color: gray;
+padding-top: 31px;
+padding-bottom: 31px;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+.navbar-right img:nth-child(2) {
+    width: 18.3px;
+    height: 12.8px;
+    margin-left: 44px;
+}
+.navbar-right img:nth-child(3) {
+    width: 16.5px;
+    height: 16.5px;
+    margin-left: 44px;
+}
+.menu {
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 30px;
+    
+    right: 20px;
+}
+
+.in {
+    width: 30px;
+    height: 30px;
+    
+  
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    background: transparent;
+   
+
+}
+#side {
+   position: absolute; 
+   right: -150px;
+
+   height: 100%;
+   width: 150px;
+   transition: .5s;
+   background: rgba(0,0,0,0.6);
+
+}
+#side li {
+    text-align: center;
+    color: gray;
+    margin-top: 30px;     
+}
+.side1 {
+   transform: translateX(-150px);
+    
+}
+#side li a {
+    color: gray;
+}
+.top1 {
+    transform: rotate(45deg) translateX(5px) translateY(5px);
+}
+.cente {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.bottom1 {
+    transform: rotate(-45deg) translateX(5px) translateY(-5px);
+}
+#in div {
+    width: 20px;
+    height: 2px;
+    background: gray;
+    transition: .5s;
+}
+.menu div:nth-child(2) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.img-fon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    /* height: 500px; */
+  
+}
+.img-fon img {
+    width: 100%;
+}
+.kv-porten0 {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kv-porten {
+  
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kv-porten0 p {
+    font-family: 'PT Sans', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+text-transform: uppercase;
+
+
+}
+.kv-porten h4 {
+    font-family: Post No Bills Jaffna;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+color: white;
+text-align: center;
+
+}
+.kv-porten hr {
+    width: 60%;
+}
+.kv-porten p {
+    text-transform: uppercase;
+}
+.center1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 700px;
+}
+.center2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 700px;
+}
+.center1-left {
+    background: rgb(10, 10, 10);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    align-content: space-around;
+    width: 54%;
+
+}
+.center1-right {
+    object-fit: cover;
+    width: 46%;
+    height: 700px;
+    background-image: url("Rectangle 8.png");
+    background-size: cover;
+    background-position: center;
+}
+.center1-right img {
+    width: 100%;
+   
+}
+.center2-left {
+    object-fit: cover;
+    background-image: url("Rectangle 9.png");
+    background-size: cover;
+    background-position: center;
+    width: 46%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.center2-left img {
+    width: 100%;
+}
+.center1-left h3{
+    font-family: 'Playfair Display', serif;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+margin-top: 50px;
+
+}
+.hr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hr hr {
+    width: 120px;
+    color: gray;
+  
+  
+}
+.center2-right {
+   
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54%;
+    background-color: black;
+}
+.card-img {
+    /* width: ; */
+    height: 260px;
+    background: #191B1C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 30%;
+}
+.card img {
+    width: 80%;
+ 
+}
+.card p {
+    margin-top: 10px;
+    font-family: 'PT Sans', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+
+}
+.card-box {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.text-box {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.text-box h3 {
+    font-family: 'Playfair Display', serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+text-transform: uppercase;
+color: white;
+
+}
+.text-box p {
+    font-family: 'PT Sans', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+
+}
+.text-box hr {
+    width: 120px;
+}
+.button {
+    width: 80%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin: auto;
+
+
+}
+.button p {
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0.1em;
+text-align: center;
+
+}
+.block-box {
+    /* height: 1290px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    padding-bottom: 100px;
+}
+.block-box1 {
+    width: 60%;
+    height: inherit;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: black;
+}
+.block-img {
+    /* width: ; */
+    height: 250px;
+    background: #191B1C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    width: 23%;
+    margin-top: 15px;
+}
+.block img {
+    width: 80%;
+ 
+}
+.block p {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+.block-box h3{
+    font-family: 'Playfair Display', serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+margin-top: 120px;
+
+}
+.center1-right {
+    display: flex;
+    flex-direction: column;
+}
+.top, .bottom {
+    width: 100%;
+    height: 350px;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom h3 {
+    font-family: 'Playfair Display', serif;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-transform: uppercase;
+text-align: center;
+color: white;
+}
+.bottom button {
+    font-family: PT Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0.1em;
+text-align: center;
+color: white;
+border: 1px solid white;
+background: transparent;
+width: 140px;
+
+}
+.footer {
+    /* height: 362px; */
+    width: 100%;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer h4 {
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: Playfair Display;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+color: white;
+
+}
+.images {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.images img {
+    width: 255px;
+    height: 94px;
+}
+
+@media screen and (min-width: 1920px) {
+    .card-img {
+        height: 325px;
+    }
+    .block-img {
+        height: 325px;
+    }
+
+
+}
+@media screen and (max-width: 900px) {
+    .card-img {
+        height: 200px;
+    }
+    .block-img {
+        height: 200px;
+    }
+
+
+}   
+@media screen and (max-width: 950px) {
+  
+    .center1 {
+        flex-direction: column;
+        height: 1400px;
+
+    }
+    .center2 {
+        flex-direction: column;
+        height: 1200px;
+
+    }
+    .center1-left {
+        width: 100%;
+        height: 700px;
+    }
+    .center1-right {
+        width: 100%;
+        height: 700px;
+
+    }
+    .top {
+        height: 350px;
+    }
+    .bottom {
+        height:350px;
+    }
+    .center2-left {
+        width: 100%;
+        height: 500px;
+
+    }
+    .center2-right {
+        width: 100%;
+        height: 700px;
+
+    }
+    .kv-porten {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 40px;
+    }
+    .kv-porten0 p {
+        font-family: sans-serif;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+    
+    }
+    .kv-porten h4 {
+        font-family: Post No Bills Jaffna;
+    font-size:18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: white;
+    text-align: center;
+    
+    }
+    .card-img {
+        height: 325px;
+    }
+    .navbar-right ul {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .block {
+        width: 48%;
+    }
+    .block-img {
+        height: 325px;
+    }
+
+} 
+@media screen and (max-width: 700px) {
+    .card-img {
+        height: 250px;
+    }
+    .navbar-right ul {
+        display: none;
+    }
+    .block {
+        width: 48%;
+    }
+    .block-img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .block {
+        width: 100%;
+    }
+    .card-img {
+        height: 320px;
+    }
+    .block-img {
+        height: 320px;
+    }
+    .card {
+        width: 80%;
+    }
+    .card-box {
+        height: inherit;
+    }
+    .center1-left {
+        height: inherit;
+    }
+    .center1 {
+        height: inherit;
+    }
+    .center2 {
+        height: inherit;
+    }
+    .text-box {
+        width: 80%;
+    }
+    .kv-porten {
+        width: 120px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    .kv-porten h4 {
+        font-size: 12px;
+    }
+
+}
